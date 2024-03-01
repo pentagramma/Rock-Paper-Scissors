@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="auto-play.css">
+    <div>
+      <title class="justify-content: center">Rock Paper Scissors</title>
+    </div>
+    <style>
+     
+    </style>
+    
+  </head>
+  <body>
+    <p class="title-rps">Rock Paper Scissors</p>
+    <button onclick="
+      playGame('rock');
+      bringBackParagraph();
+    "class='button-rock'><i class="em em-facepunch" aria-role="presentation" aria-label="FISTED HAND SIGN"></i></button>
+
+
+    <button onclick="
+      playGame('paper');
+      bringBackParagraph();
+    "class='button-paper'><i class="em em-hand" aria-role="presentation" aria-label="RAISED HAND"></i></button>
+
+
+    <button onclick="
+      playGame('scissors');
+      bringBackParagraph();
+    "class='button-scissors'><i class="em em-v" aria-role="presentation" aria-label="VICTORY HAND"></i></button>
+    
+    
+    <p id="reMove" class="js-result result"></p>
+    <p id="reMove2" class="js-moves moves"></p>
+    <p class="js-score score"></p>
+
+    <button onclick="
+      score.wins=0;
+      score.losses=0;
+      score.ties=0;
+      localStorage.removeItem('score');
+      updateScoreElement();
+      removeParagraph();
+  
+      
+     "class='reset-score'>Reset score</button>
+     <button class="auto-play-button" onclick="
+     autoPlay();
+     ">Auto Play</button>
+    
+    <script src="auto-play.js">
+
+    </script>
+  </body>
+
+</html> 
